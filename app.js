@@ -28,9 +28,9 @@ app.get('/', (req, res) => {
 app.all('/query', (req, res) => {
   // Input parameters
   // Use query parameters or request body values for startDate, endDate, and vehicleId
-  const startDate = req.query.startDate || req.body.startDate || '2023-12-16T00:44:22Z';
-  const endDate = req.query.endDate || req.body.endDate || '2023-12-16T02:51:00Z';
-  const vehicleId = req.query.vehicleId || req.body.vehicleId || 'sprint-5';
+  const startDate = req.query.startDate || req.body.startDate;
+  const endDate = req.query.endDate || req.body.endDate;
+  const vehicleId = req.query.vehicleId || req.body.vehicleId;
 
   processQuery(startDate, endDate, vehicleId)
     .then(data => res.json(data))
