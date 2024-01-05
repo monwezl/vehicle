@@ -7,7 +7,7 @@ This Node.js application provides an API for transforming sample vehicle status 
 1. **Clone the repository:**
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/monwezl/vehicle.git
    ```
 
 2. **Install dependencies:**
@@ -32,7 +32,7 @@ This Node.js application provides an API for transforming sample vehicle status 
 - Response Format
   The response is an array of intervals in the format.
 
-  ```json
+  ```
   { id, timestamp, vehicleId, event}
   ```
 
@@ -50,7 +50,7 @@ This Node.js application provides an API for transforming sample vehicle status 
 
 - Response Format
   The response is an array of intervals in the format.
-  ```json
+  ```
   { event, from, to }
   ```
 
